@@ -1,0 +1,17 @@
+version: '3.9'
+
+services:
+
+  dish_api_service:
+    restart: on-failure
+    container_name: dish_api_service
+    build: dish_api_service/
+    ports:
+      - "8001:80"
+
+  dish_service:
+    restart: on-failure
+    container_name: dish_service
+    build: dish_service/
+    ports:
+      - "8000:80"
