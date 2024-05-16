@@ -8,6 +8,7 @@ from database import database as database
 from database.database import DishDB
 from model.model import Dish
 
+
 app = FastAPI()
 
 database.Base.metadata.create_all(bind=database.engine)
