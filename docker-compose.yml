@@ -9,8 +9,6 @@ services:
     ports:
       - "8001:80"
 
-
-
   dish_service:
     restart: on-failure
     container_name: dish_service
